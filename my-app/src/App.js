@@ -1,25 +1,19 @@
 // import logo from './logo.svg';
 import './App.css';
-
-export default function App() 
-{
+import Navbar from './components/js/Navbar';
+import Container from './components/js/Container';
+// import TextFrom  from './components/TextFrom';
+import About from './components/js/About';
+export default function App() {
   return (
-    <nav className="navbar navbar-expand-md bg-dark navbar-dark">
-      <a className="navbar-brand" href="/">Chandan jain H P</a>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <span className="navbar-toggler-icon"></span>
-      </button>
-      <div className="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link" href="/">Home</a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="/">blog</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div>
+      <About/>
+      <Navbar title="Chandan jain HP" text="Blog" />
+      <Container ContainerH="Hey friends!" ContainerP="I'm a designer and full stack web developer |🧑‍💻 
+      built attractive digital experience website,
+      I designer cool stuff for the web" />
+      {/* <TextFrom h1="CONVERTER you world"/> */}
+    </div>
   )
 }
 
